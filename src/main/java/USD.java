@@ -1,15 +1,20 @@
-public class USD extends Coin {
+import java.io.Serializable;
+
+public class USD extends Coin implements Serializable {
+
+private double value = 0.28;
+
+    public USD() {
+    }
 
 
-    private final double value = 3.52;
-
-    @Override
     public double getValue() {
         return value;
     }
-    @Override
-    public double calculate(double input) {
+
+    public  double calculate(double input) {
         return input * getValue();
     }
+
 }
 

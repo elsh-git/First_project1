@@ -1,12 +1,11 @@
 import java.util.*;
 import java.io.FileWriter;
 import java.awt.Desktop;
-import java.io.IOException;
 import java.io.File;
 
 /**
  * @author elad shechtman
- * @version 1.0
+ * @version 1.1
  */
 
 public class Main {
@@ -36,6 +35,7 @@ public class Main {
             if (input1.length() == 1) {
                 char character1 = input1.charAt(0);
                 if ((int) character1 == 49) {
+
                     System.out.println();
                     System.out.println();
                     System.out.println();

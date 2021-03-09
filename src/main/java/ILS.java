@@ -1,14 +1,19 @@
-public class ILS extends Coin {
+import java.io.Serializable;
 
-    private final double value = 0.28;
+public class ILS extends Coin implements Serializable {
 
-    @Override
+    private double value = 3.52;
+
+    public ILS() {
+    }
+
+
     public double getValue() {
         return value;
     }
 
-    @Override
     public double calculate(double input) {
-        return (input * getValue());
+        return input * getValue();
     }
 }
+

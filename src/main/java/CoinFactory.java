@@ -6,7 +6,7 @@ public class CoinFactory {
             case USD:
                 return new USD();
             case EUR:
-                return new USD();
+                return new EUR();
         }
         return null;
     }

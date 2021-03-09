@@ -1,12 +1,18 @@
-public class EUR extends Coin{
-    private final double value = 4.23;
+import java.io.Serializable;
 
-    @Override
+public class EUR extends Coin implements Serializable {
+
+    private double value = 1/4.23;
+
+    public EUR() {
+    }
+
     public double getValue() {
         return value;
     }
-    @Override
-    public double calculate(double input) {
+
+    public  double calculate(double input) {
         return input * getValue();
     }
+
 }
